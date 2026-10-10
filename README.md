@@ -1,11 +1,106 @@
-<div align="center">
+# پلتفرم هوش مصنوعی آوا (Ava AI Platform)
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+<p align="center">
+  <strong>پلتفرم جامع هوش مصنوعی سازمانی، مدل‌های بنیادین زبان فارسی و زیرساخت پرسرعت توسعه‌دهندگان</strong>
+</p>
 
-  <h1>Built with AI Studio</h2>
+---
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## 🌟 معرفی پروژه
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+پلتفرم **هوش مصنوعی آوا** یک راهکار پیشرفته و مدرن با ۳ نمای تعاملی کامل است:
 
-</div>
+1. **راهکارهای سازمانی و اتوماسیون (Enterprise & Automation)**:
+   - تب‌های تخصصی صنایع تحت پوشش (فین‌تک، سلامت، تجارت الکترونیک، مخابرات)
+   - فلوچارت تعاملی خط لوله پردازشی ۳ مرحله‌ای
+   - شبیه‌ساز زنده محیط Sandbox برای تست اسناد مالی، درمانی و صوت
+   - محاسبه‌گر تعاملی بازگشت سرمایه (ROI Calculator) همراه با صدور گزارش PDF
+   - زیرساخت امنیت سطح نظامی، انطباق با افتا و گواهی ISO 27001
+   - فرم رسمی درخواست جلسه سازمانی و پرسش‌های متداول (FAQ)
+
+2. **زیرساخت قدرتمند توسعه‌دهندگان (Developer & API Infrastructure)**:
+   - ترمینال زنده تعاملی با تست فراخوانی cURL و استریم پاسخ
+   - شبکه بنچمارک‌ها و لتنسی (TTFT < 190ms، کانتکست ۱۲۸k پیوسته)
+   - نمودار مقایسه‌ای سرعت استخراج توکن (Tok/s)
+   - ادغام در ۳ خط کد برای پایتون، تایپ‌اسکریپت و cURL
+   - کتابخانه مدل‌های بنیادین (Ava-Chat, Ava-Vision, Ava-Code, Ava-Voice)
+   - امنیت داده سازمانی (Tier-4, SOC2) و جامعه توسعه‌دهندگان
+
+3. **کنسول کسب‌وکار و دمو (Business & Live Playground)**:
+   - شبیه‌ساز تعاملی Copilot Playground با پرامپت‌های آماده و سوییچ مدل
+   - کنسول زنده با شمارنده توکن، نمودار برداری SVG توان عملیاتی ۲۴ ساعته
+   - تنظیم‌کننده خلاقیت مدل (Temperature) و دستور سیستم (System Prompt)
+   - پلن‌های شفاف تعرفه با سوییچ پرداخت ماهانه و سالانه
+   - داستان‌های موفقیت و نظرات مشتریان برجسته
+
+---
+
+## 🛠️ تکنولوژی‌های به‌کاررفته
+
+- **React 19** + **TypeScript**
+- **Vite 8**
+- **Tailwind CSS v4** (با تم تاریک اختصاصی و پالت رنگی سایبر-گلس)
+- **فونت‌های Vazirmatn و Space Grotesk**
+- **Material Symbols Icons**
+
+---
+
+## 🚀 راهنمای راه‌اندازی محلی
+
+### پیش‌نیازها
+- Node.js نسخه 18 یا بالاتر
+- npm یا pnpm
+
+### مراحل اجرا:
+
+```bash
+# ۱. کلون کردن مخزن
+git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+cd YOUR_REPOSITORY
+
+# ۲. نصب وابستگی‌ها
+npm install
+
+# ۳. اجرای سرور توسعه
+npm run dev
+
+# ۴. ساخت نسخه نهایی پروداکشن
+npm run build
+```
+
+---
+
+## 📁 ساختار فایل‌های پروژه
+
+```
+├── index.html
+├── package.json
+├── vite.config.ts
+├── tsconfig.json
+└── src/
+    ├── App.tsx                     # کامپوننت اصلی و هماهنگ‌کننده صفحات و مودال‌ها
+    ├── main.tsx                    # نقطه ورود ری‌اکت
+    ├── index.css                   # استایل‌های سراسری، توکن‌های رنگی و فونت‌ها
+    ├── types.ts                    # تایپ‌ها و اینترفیس‌های داده‌ای
+    ├── data/
+    │   └── mockData.ts             # داده‌های صنایع، مدل‌ها، پلن‌ها و نظرات
+    └── components/
+        ├── Header.tsx              # هدر سراسری با سوییچ بین صفحات
+        ├── Footer.tsx              # فوتر با خبرنامه و وضعیت شبکه
+        ├── screens/
+        │   ├── EnterpriseScreen.tsx  # صفحه ۱: راهکارهای سازمانی
+        │   ├── DeveloperScreen.tsx   # صفحه ۲: زیرساخت توسعه‌دهندگان
+        │   └── BusinessScreen.tsx    # صفحه ۳: کنسول کسب‌وکار و دمو
+        └── modals/
+            ├── AuthModal.tsx         # ورود و ثبت‌نام
+            ├── SandboxModal.tsx      # شبیه‌ساز سندباکس سازمانی
+            ├── ApiKeyModal.tsx       # ایجاد کلید API تست
+            ├── RoiReportModal.tsx    # گزارش تفصیلی بازگشت سرمایه
+            ├── PlanModal.tsx         # تایید پلن تعرفه
+            └── OfficeHoursModal.tsx  # ثبت‌نام در وبینار فنی
+```
+
+---
+
+## 📄 مجوز و لایسنس
+کلیه حقوق مادی و معنوی برای هوش مصنوعی آوا محفوظ است.

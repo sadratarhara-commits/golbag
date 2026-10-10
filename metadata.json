@@ -1,0 +1,6 @@
+{
+  "name": "هوش مصنوعی آوا - پلتفرم جامع هوش مصنوعی سازمانی و توسعه‌دهندگان",
+  "description": "پلتفرم جامع هوش مصنوعی بومی، پردازش زبان فارسی، اتوماسیون سازمانی، مدل‌های بنیادین و زیرساخت پرسرعت API",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
